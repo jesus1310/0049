@@ -51,17 +51,15 @@ public class Calculadora
                 suma = (contador + a) + suma;
                 contador = contador + 1;
             }
-            if (a == b){
-                return a;
-            }
-            else{
-                return suma;
+            if (a != b){
+                a = suma;
             }
         }
         else{
             System.out.println("Los valores dados por parámetro deben ser positivos");
-            return -1;
+            a = -1;
         }
+        return a;
     }
 
     /**
