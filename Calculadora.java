@@ -46,10 +46,28 @@ public class Calculadora
             a = b;
             b = aux;
         }
+        else if (a == b){
+            suma = a;
+        }
         while (contador + a <= b){
             suma = (contador + a) + suma;
             contador = contador + 1;
         }
         return suma;
+    }
+    
+    /**
+     * Método que nos dice si un número pasado por parámetro es primo o no
+     */
+    public boolean isPrime(int n){
+        boolean esPrimo = true;
+        int contador = 2;
+        while(esPrimo && contador <= (n - 1)){
+            if (n % contador == 0){
+                esPrimo = false;
+            }
+            contador = contador + 1;
+        }
+        return esPrimo;
     }
 }
