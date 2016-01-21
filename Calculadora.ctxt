@@ -1,5 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=void\ multiplesOfFive()
-comment0.text=\r\n\ M\u00E9todo\ que\ imprime\ por\ pantalla\ todos\ los\ m\u00FAltiplos\ de\ 5\ \r\n
-numComments=1
+comment0.text=\r\n\ M\u00E9todo\ que\ imprime\ por\ pantalla\ todos\ los\ m\u00FAltiplos\ de\ 5\ entre\ 10\ y\ 95\ (ambos\ no\ incluidos)\r\n
+comment1.params=
+comment1.target=void\ sumValues()
+comment1.text=\r\n\ M\u00E9todo\ que\ imprime\ por\ pantalla\ la\ suma\ de\ todos\ los\ n\u00FAmeros\ comprendidos\ entre\ 0\ y\ 10\ (ambos\ incluidos)\r\n
+numComments=2
