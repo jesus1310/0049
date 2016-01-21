@@ -41,20 +41,25 @@ public class Calculadora
     public int sumValuesInterval(int a, int b){
         int suma = 0;
         int contador = 0;
-        if (a > b){
-            int aux = a;
-            a = b;
-            b = aux;
-        }
-        while (contador + a <= b){
-            suma = (contador + a) + suma;
-            contador = contador + 1;
-        }
-        if (a == b){
-            return a;
+        if (a >= 0 && b >= 0){
+            if (a > b){
+                int aux = a;
+                a = b;
+                b = aux;
+            }
+            while (contador + a <= b){
+                suma = (contador + a) + suma;
+                contador = contador + 1;
+            }
+            if (a == b){
+                return a;
+            }
+            else{
+                return suma;
+            }
         }
         else{
-            return suma;
+            return -1;
         }
     }
 
@@ -64,11 +69,17 @@ public class Calculadora
     public boolean isPrime(int n){
         boolean esPrimo = true;
         int contador = 2;
-        while(esPrimo && contador <= (n - 1)){
-            if (n % contador == 0){
-                esPrimo = false;
+        if (n > 1){
+            while(esPrimo && contador <= (n - 1)){
+                if (n % contador == 0){
+                    esPrimo = false;
+                }
+                contador = contador + 1;
             }
-            contador = contador + 1;
+        }
+        else{
+            System.out.println("El número dado no es válido. El primer número primo es el 2");
+            esPrimo = false;
         }
         return esPrimo;
     }
