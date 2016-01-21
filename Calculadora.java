@@ -34,4 +34,22 @@ public class Calculadora
         }
         System.out.println("La suma de todos los números comprendidos entre 0 y 10 (ambos incluidos) es " + suma);
     }
+    
+    /**
+     * Método que imprime por pantalla la suma de todos los números comprendidos entre los valores pasados por parámetro (ambos incluidos)
+     */
+    public int sumValuesInterval(int a, int b){
+        int suma = 0;
+        int contador = 0;
+        if (a > b){
+            int aux = a;
+            a = b;
+            b = aux;
+        }
+        while (contador + a <= b){
+            suma = (contador + a) + suma;
+            contador = contador + 1;
+        }
+        return suma;
+    }
 }
