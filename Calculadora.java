@@ -21,7 +21,7 @@ public class Calculadora
             producto = numero * contador;
         }
     }
-    
+
     /**
      * Método que imprime por pantalla la suma de todos los números comprendidos entre 0 y 10 (ambos incluidos)
      */
@@ -34,7 +34,7 @@ public class Calculadora
         }
         System.out.println("La suma de todos los números comprendidos entre 0 y 10 (ambos incluidos) es " + suma);
     }
-    
+
     /**
      * Método que imprime por pantalla la suma de todos los números comprendidos entre los valores pasados por parámetro (ambos incluidos)
      */
@@ -46,16 +46,18 @@ public class Calculadora
             a = b;
             b = aux;
         }
-        else if (a == b){
-            suma = a;
-        }
         while (contador + a <= b){
             suma = (contador + a) + suma;
             contador = contador + 1;
         }
-        return suma;
+        if (a == b){
+            return a;
+        }
+        else{
+            return suma;
+        }
     }
-    
+
     /**
      * Método que nos dice si un número pasado por parámetro es primo o no
      */
