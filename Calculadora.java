@@ -59,6 +59,7 @@ public class Calculadora
             }
         }
         else{
+            System.out.println("Los valores dados por parámetro deben ser positivos");
             return -1;
         }
     }
