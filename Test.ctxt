@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Test()
+comment0.text=\r\n\ Constructor\ de\ objetos\ de\ la\ clase\ Test\r\n
+comment1.params=
+comment1.target=void\ testSumValuesInterval()
+comment1.text=\r\n\ M\u00E9todo\ para\ comprobar\ la\ funcionalidad\ del\ m\u00E9todo\ sumValuesInterval\r\n
+comment2.params=
+comment2.target=void\ testIsPrime()
+numComments=3
