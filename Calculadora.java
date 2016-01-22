@@ -33,6 +33,7 @@ public class Calculadora
             contador = contador + 1;
         }
         System.out.println("La suma de todos los números comprendidos entre 0 y 10 (ambos incluidos) es " + suma);
+
     }
 
     /**
@@ -47,9 +48,11 @@ public class Calculadora
                 a = b;
                 b = aux;
             }
-            while (contador + a <= b){
-                suma = (contador + a) + suma;
-                contador = contador + 1;
+            else{
+                while (contador + a <= b){
+                    suma = (contador + a) + suma;
+                    contador = contador + 1;
+                }
             }
             if (a != b){
                 a = suma;
@@ -81,5 +84,24 @@ public class Calculadora
             esPrimo = false;
         }
         return esPrimo;
+    }
+
+    /**
+     * Método que realiza multiplicaciones enteras con dos números dados por parámetro
+     */
+    public int multiplica(int a,int b){
+        int contador = 0;
+        int resultado = 0;
+        if (a >= 0 && b >= 0){
+            while (contador < b){
+                resultado = resultado + a;
+                contador = contador + 1;
+            }
+        }
+        else{
+            resultado = -1;
+            System.out.println("Los números dados no son válidos, ambos deben ser positivos");
+        }
+        return resultado;
     }
 }
